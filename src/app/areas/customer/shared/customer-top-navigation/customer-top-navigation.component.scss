@@ -1,0 +1,18 @@
+mat-toolbar {
+    display: flex;
+    font-family: Roboto, Medium;
+    font-size: 32px;
+    color: #333C68;
+    
+    .active {
+      color: #F86088;
+    }
+    .mat-raised-button {
+      color:rgb(39, 77, 200);
+      border-radius: 4px;
+    }
+}
+
+.logo {
+  height: 2.2em;
+}
