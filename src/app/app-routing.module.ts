@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [
-  {
-    path: '',
-    children: [
-      { path: '', loadChildren: 'app/areas/customers/customer.module#CustomersModule' },
-      { path: 'admin', loadChildren: 'app/areas/admin/admin.module#AdminModule' }
-    ]
-  }
-];
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [
+  ],
+  imports: [
+    RouterModule.forRoot([
+      {
+        path: '', children: [
+          { path: '', loadChildren: './areas/customer/customer.module#CustomerModule' },
+          { path: 'admin', loadChildren: './areas/admin/admin.module#AdminModule' }
+        ]
+      },
+    ])
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
