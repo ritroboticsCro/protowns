@@ -9,7 +9,11 @@ const customerRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(customerRoutes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forChild(customerRoutes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class CustomerRoutingModule { }
