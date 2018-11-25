@@ -3,6 +3,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    color: aliceblue;
     &:hover {
         cursor: pointer;
     }
@@ -12,7 +13,7 @@
         top: 0;
         left: 0;
         z-index: 6;
-        background: rgb(145, 42, 42);
+        background: rgb(26, 92, 143);
         border-radius: 100%;
     }
     .mat-search_icon-close,
@@ -48,10 +49,12 @@
  .example-spacer {
     margin-left: 15%;
     margin-right: 10%;
-   }  
+   }
+ .space {
+     flex: 1 1 auto;
+ }    
 
 mat-card{
     box-shadow: none !important;
-    position: absolute;
-    left: 65em;
+    
 }
