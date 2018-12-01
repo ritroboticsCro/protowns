@@ -1,60 +1,73 @@
+.container {
+  height: 100vh;
+}
 
 .mat-search_icons {
-    display: block;
-    margin: 0;
-    padding: 0;
-    color: aliceblue;
-    &:hover {
-        cursor: pointer;
-    }
-    .mat-search_icon-close,
-    .mat-search_icon-search {
-        transition: all .4s cubic-bezier(.4, 0, .2, 1);
-        top: 0;
-        left: 0;
-        z-index: 6;
-        background: rgb(26, 92, 143);
-        border-radius: 100%;
-    }
-    .mat-search_icon-close,
-    &.mat-search_icons--active .mat-search_icon-search {
-        opacity: 0;
-        transform: rotate(225deg);
-    }
-    &.mat-search_icons--active .mat-search_icon-close {
-        opacity: 1;
-        z-index: 3;
-        visibility: visible;
-        transform: rotate(360deg);
-    }
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .mat-search_icon-close,
+  .mat-search_icon-search {
+    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgb(26, 92, 143);
+    border-radius: 100%;
+  }
+
+  .mat-search_icon-close,
+  &.mat-search_icons--active .mat-search_icon-search {
+    opacity: 0;
+    transform: rotate(225deg);
+  }
+
+  &.mat-search_icons--active .mat-search_icon-close {
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+    transform: rotate(360deg);
+  }
 }
 
 .mat-search_field {
-    margin: 25px;
+  margin: 25px;
 }
 
 .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
 
 .example-card {
-   background-color: rgba(0, 0, 0, 0);
-  }
+  background-color: rgba(0, 0, 0, 0);
+}
 
 //   .example-icon {
 //     padding: 0 54px;
 //   }
-  
- .example-spacer {
-    margin-left: 15%;
-    margin-right: 10%;
-   }
- .space {
-     flex: 1 1 auto;
- }    
 
-mat-card{
-    box-shadow: none !important;
-    
+.example-spacer {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.space {
+  flex: 1 1 auto;
+}
+
+mat-card {
+  box-shadow: none !important;
+
+}
+
+router-outlet {
+  margin: 20px;
+  
 }

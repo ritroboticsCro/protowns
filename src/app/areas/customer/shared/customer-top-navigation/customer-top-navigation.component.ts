@@ -1,5 +1,7 @@
 import { Component, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { LandingComponent } from '../../landing/landing.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-top-navigation',
@@ -22,6 +24,7 @@ export class CustomerTopNavigationComponent {
   @Output() onEnter = new EventEmitter<string>();
   @Output() onFocus = new EventEmitter<string>();
   @Output() onOpen = new EventEmitter<void>();
+
 
   searchVisible = false;
 
@@ -53,3 +56,4 @@ export class CustomerTopNavigationComponent {
   }
 
 }
+

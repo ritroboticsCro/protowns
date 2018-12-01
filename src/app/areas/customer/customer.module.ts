@@ -5,11 +5,13 @@ import { CustomerRoutingModule } from './customer-routing.module';
 import { LandingComponent } from './landing/landing.component';
 import { CustomerTopNavigationComponent } from './shared/customer-top-navigation/customer-top-navigation.component';
 import { SharedModule } from '../shared/shared.module';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     LandingComponent,
-    CustomerTopNavigationComponent
+    CustomerTopNavigationComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,

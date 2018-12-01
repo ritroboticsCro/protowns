@@ -4,6 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 
 import { CustomMaterialModule } from './material/custom-material.module';
+import { RouterModule } from '@angular/router';
 
 const SHARED_COMPONENTS = [
 ];
@@ -15,12 +16,14 @@ const SHARED_COMPONENTS = [
   imports: [
     CustomMaterialModule,
     CommonModule,
+    RouterModule,
     FlexLayoutModule,
     FormsModule 
   ],
   exports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     FlexLayoutModule,
     CustomMaterialModule,
     ...SHARED_COMPONENTS

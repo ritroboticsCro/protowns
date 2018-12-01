@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const customerRoutes: Routes = [
   {
-    path: '', component: LandingComponent
+    path: '', component: LayoutComponent, children: [
+      { path: '', component: LandingComponent }
+    ]
   }
 ];
 
