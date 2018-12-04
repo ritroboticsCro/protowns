@@ -66,7 +66,10 @@ mat-card {
   box-shadow: none !important;
 
 }
-
-router-outlet {
-  margin: 20px;
+#nav-title{
+  margin-left: 33px;
+  font-family: Roboto, Medium;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4a84e8;
 }

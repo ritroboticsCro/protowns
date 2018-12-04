@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { CustomMaterialModule } from './material/custom-material.module';
 import { RouterModule } from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
 
 const SHARED_COMPONENTS = [
 ];
@@ -18,7 +19,8 @@ const SHARED_COMPONENTS = [
     CommonModule,
     RouterModule,
     FlexLayoutModule,
-    FormsModule 
+    FormsModule,
+    ChartsModule 
   ],
   exports: [
     CommonModule,
@@ -26,6 +28,7 @@ const SHARED_COMPONENTS = [
     RouterModule,
     FlexLayoutModule,
     CustomMaterialModule,
+    ChartsModule,
     ...SHARED_COMPONENTS
   ]
 })

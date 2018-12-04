@@ -46,3 +46,42 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* mat-tab customization */
+#mat-tab-label-0-0 {
+	justify-content: left !important;
+	padding: 0;
+	min-width: 25px !important;
+	padding-left: 0;
+	padding-right: 5px;
+	
+}
+
+#mat-tab-label-0-1 {
+	justify-content: left !important;
+	padding: 0;
+	min-width: 25px !important;
+    padding: 5px;
+}
+
+#mat-tab-label-0-2 {
+	justify-content: left !important;
+	padding: 0;
+	min-width: 25px !important;
+    padding: 5px;
+}
+
+#mat-tab-label-0-3 {
+	justify-content: left !important;
+	padding: 0;
+	min-width: 25px !important;
+    padding: 5px;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    color:#315da9;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #3b71d0 !important;
+}

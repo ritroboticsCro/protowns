@@ -1,1 +1,52 @@
-<h1>Hello</h1>
+<div class="wrapper">
+  <div class="row1">
+        <mat-card-title id="title">GoodMorning, Lee!
+                <mat-card-subtitle id="subtitle">
+                  <br>Today is December 2, 2018. The time is 9:30:31 AM 
+                </mat-card-subtitle>
+              </mat-card-title>
+  </div>
+  <div class="row2" fxLayoutAlign="center center">
+        <mat-card-title id="title">$212.45
+                <mat-card-subtitle id="subtitle">
+                  -1.91 (0.88%)
+                </mat-card-subtitle>
+              </mat-card-title>
+  </div>
+</div>
+
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="OVERVIEW">
+    <div class="wrapper">
+      <div class="overview-left">
+        <mat-card-title id="title2">34,100
+          <br><span id="title2-sub">New contacts created (7 days)</span>
+          <mat-card-subtitle id="subtitle2">
+            <br><br>The most magical city in the world full of history and amazing
+          </mat-card-subtitle>
+        </mat-card-title>
+      </div>
+      <div fxLayoutAlign="center center" 
+          class="overview-right">
+          <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+           </canvas>       
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="EMPLOYEE">
+    Content 2
+  </mat-tab>
+  <mat-tab label="PRODUCTS">
+    Content 3
+  </mat-tab>
+  <mat-tab label="MISC">
+    Content 3
+  </mat-tab>
+</mat-tab-group>
+
+<mat-divider></mat-divider>

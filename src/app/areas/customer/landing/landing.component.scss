@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  margin: 0px;
+
+  .overview-left {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.mat-tab-group {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.mat-divider {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#title {
+  font-family: Roboto, Medium;
+  size: 55px;
+}
+
+#sub {
+  font-family: Roboto, Light;
+}
+
+#title2 {
+  font-family: Roboto, Medium;
+  font-size: 50px;
+  #title2-sub {
+    font-size: 15px;
+  }
+}
+
+.row1 {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.row2 {
+  margin-top: 20px;
+}
