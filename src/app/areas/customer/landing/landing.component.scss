@@ -3,8 +3,9 @@
   margin: 0px;
 
   .overview-left {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left: 0;
+    padding-right: 15px;
   }
 }
 
@@ -30,8 +31,18 @@
   size: 55px;
 }
 
+#title1 {
+  font-family: Roboto, Medium;
+  font-size: 35px;
+}
+
 #sub {
   font-family: Roboto, Light;
+}
+
+#sub-buttons {
+ margin-top: 20px;
+ position: center;
 }
 
 #title2 {
@@ -39,6 +50,7 @@
   font-size: 50px;
   #title2-sub {
     font-size: 15px;
+    margin-top: 15px;
   }
 }
 
@@ -49,4 +61,18 @@
 
 .row2 {
   margin-top: 20px;
+}
+
+.vl {
+  border-left: 1px solid rgb(181, 189, 181);
+  height: 30px;
+  margin: 20px;
+}
+
+.row2right {
+  margin-bottom: -14px;
+}
+
+.mat-card-title:not(:first-child) {
+  margin-top: 3px;
 }

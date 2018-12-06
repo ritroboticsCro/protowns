@@ -1,0 +1,122 @@
+.wrapper {
+  display: flex;
+  margin: 0px;
+
+  .overview-left {
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.row1 {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.row2 {
+  margin-top: 20px;
+  margin-right: 40px
+}
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+#title {
+  font-family: Roboto, Medium;
+  size: 55px;
+}
+
+.overall-card {
+    min-width: 230px;
+    min-height: 200px;
+}
+
+.mattitle {
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.icons {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+/* Progress bar */
+.mat-bar-progress {
+    margin: 20px;
+}
+
+.bar {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 5px;
+}
+
+::ng-deep #new .mat-progress-bar-fill::after {
+    background-color: rgb(44, 113, 174);
+}
+
+::ng-deep #return .mat-progress-bar-fill::after {
+    background-color: rgb(250, 44, 41);
+}
+
+::ng-deep #digital .mat-progress-bar-fill::after {
+    background-color: rgb(46, 174, 44);
+}
+
+::ng-deep #non-digital .mat-progress-bar-fill::after {
+    background-color: rgb(250, 139, 41);
+}
+
+::ng-deep #local .mat-progress-bar-fill::after {
+    background-color: rgb(109, 44, 174);
+}
+
+::ng-deep #international .mat-progress-bar-fill::after {
+    background-color: rgb(201, 67, 163);
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 5px;
+}
+
+#cal {
+    font-size: 12.5px;
+}
+
+.button {
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+.titlerev {
+    margin-top: 13px;
+    margin-bottom: 12px;
+}
+
+#revenue {
+    font-size: 45px;
+    font-weight: 450;
+    margin-left: -50px;
+}
+
+#arrow {
+    font-size: 10px;
+}

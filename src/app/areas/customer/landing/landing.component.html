@@ -1,17 +1,23 @@
 <div class="wrapper">
   <div class="row1">
-        <mat-card-title id="title">GoodMorning, Lee!
-                <mat-card-subtitle id="subtitle">
-                  <br>Today is December 2, 2018. The time is 9:30:31 AM 
-                </mat-card-subtitle>
-              </mat-card-title>
+    <mat-card-title id="title">GoodMorning, Lee!
+      <mat-card-subtitle id="subtitle">
+        <br>Today is December 2, 2018. The time is 9:30:31 AM
+      </mat-card-subtitle>
+    </mat-card-title>
   </div>
   <div class="row2" fxLayoutAlign="center center">
-        <mat-card-title id="title">$212.45
-                <mat-card-subtitle id="subtitle">
-                  -1.91 (0.88%)
-                </mat-card-subtitle>
-              </mat-card-title>
+    <mat-card-title class="row2right" id="title1">$212.45
+      <mat-card-subtitle id="subtitle">
+        -1.91 (0.88%)
+      </mat-card-subtitle>
+    </mat-card-title>
+    <div class="vl"></div>
+    <mat-card-title class="row2right" id="title1">$212.45
+      <mat-card-subtitle id="subtitle">
+        -1.91 (0.88%)
+      </mat-card-subtitle>
+    </mat-card-title>
   </div>
 </div>
 
@@ -20,21 +26,22 @@
     <div class="wrapper">
       <div class="overview-left">
         <mat-card-title id="title2">34,100
-          <br><span id="title2-sub">New contacts created (7 days)</span>
+          <br>
+          <div id="title2-sub">New contacts created (7 days)</div>
           <mat-card-subtitle id="subtitle2">
-            <br><br>The most magical city in the world full of history and amazing
+            <br><br>This widget shows how many new contacts have been created in the past 7 days. You can edit this
+            widget in widget settings.
+            <div id="sub-buttons">
+              <button mat-button>View Details</button>
+              <button mat-button>Settings</button>
+            </div>
           </mat-card-subtitle>
         </mat-card-title>
       </div>
-      <div fxLayoutAlign="center center" 
-          class="overview-right">
-          <canvas baseChart
-                [datasets]="barChartData"
-                [labels]="barChartLabels"
-                [options]="barChartOptions"
-                [legend]="barChartLegend"
-                [chartType]="barChartType">
-           </canvas>       
+      <div fxLayoutAlign="center center" class="overview-right">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
       </div>
     </div>
   </mat-tab>
@@ -48,5 +55,9 @@
     Content 3
   </mat-tab>
 </mat-tab-group>
+
+<mat-divider></mat-divider>
+
+<app-overall-report></app-overall-report>
 
 <mat-divider></mat-divider>

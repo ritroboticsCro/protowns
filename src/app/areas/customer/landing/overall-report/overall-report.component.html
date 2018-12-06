@@ -1,0 +1,128 @@
+<div class="wrapper">
+  <div class="row1">
+    <mat-card-title id="title">Overall Report Summary
+      <mat-card-subtitle id="subtitle">
+        <br><i id="cal" class="material-icons">
+          calendar_today
+        </i>
+        December 2, 2018 - December 31, 2018
+      </mat-card-subtitle>
+    </mat-card-title>
+  </div>
+  <div class="row2" fxLayoutAlign="end center">
+    <div class="example-button-row" fxLayoutGap="20px">
+      <button mat-raised-button class="button">Activity Logs</button>
+      <button mat-raised-button class="button">Edit Settings</button>
+    </div>
+  </div>
+</div>
+
+<div class="row" fxLayoutGap="44.5px">
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-title fxLayoutAlign="center center" class="mattitle">9678</mat-card-title>
+    <mat-card-subtitle fxLayoutAlign="center start">
+      TOTAL CUSTOMERS</mat-card-subtitle>
+    <mat-card-content>
+      <div class="icons" fxLayoutAlign="center center">
+        <mat-card-subtitle>
+          <i class="material-icons">
+            person
+          </i>
+          <i class="material-icons">
+            person
+          </i>
+          <i class="material-icons">
+            person
+          </i>
+        </mat-card-subtitle>
+      </div>
+      <mat-card-subtitle>New (66%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="66" id="new">
+        </mat-progress-bar>
+      </p>
+      <mat-card-subtitle>Returning (34%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="34" id="return">
+        </mat-progress-bar>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-title fxLayoutAlign="center center" class="mattitle">943</mat-card-title>
+    <mat-card-subtitle fxLayoutAlign="center start">TOTAL PRODUCTS</mat-card-subtitle>
+    <mat-card-content>
+      <div class="icons" fxLayoutAlign="center center">
+        <mat-card-subtitle>
+          <i class="material-icons">
+            layers
+          </i>
+          <i class="material-icons">
+            layers
+          </i>
+          <i class="material-icons">
+            layers
+          </i>
+        </mat-card-subtitle>
+      </div>
+      <mat-card-subtitle>Digital products (85%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="85" id="digital">
+        </mat-progress-bar>
+      </p>
+      <mat-card-subtitle>Non-Digital products (15%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="15" id="non-digital">
+        </mat-progress-bar>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-title fxLayoutAlign="center center" class="mattitle">30</mat-card-title>
+    <mat-card-subtitle fxLayoutAlign="center start">TOTAL FRANCHISE</mat-card-subtitle>
+    <mat-card-content>
+      <div class="icons" fxLayoutAlign="center center">
+        <mat-card-subtitle>
+          <i class="material-icons">
+            room
+          </i>
+          <i class="material-icons">
+            room
+          </i>
+          <i class="material-icons">
+            room
+          </i>
+        </mat-card-subtitle>
+      </div>
+      <mat-card-subtitle>Local (75%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="75" id="local">
+        </mat-progress-bar>
+      </p>
+      <mat-card-subtitle>International (25%)</mat-card-subtitle>
+      <p>
+        <mat-progress-bar class="bar" mode="determinate" value="25" id="international">
+        </mat-progress-bar>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overall-card" fxFlex="30">
+    <mat-card-title class="titlerev">Monthly Revenue</mat-card-title>
+    <mat-card-subtitle>Calculated every 15th of the month</mat-card-subtitle>
+    <mat-card-content>
+      <div class="row" fxLayoutGap="10px">
+        <h1 id="revenue">$328.000</h1>
+        <h1 style="color: green;">27.33% <i id="arrow" class="material-icons">
+            arrow_upward
+          </i></h1>
+      </div>
+      <div fxLayoutAlign="center center">
+        <canvas baseChart [data]="doughnutChartData" [chartType]="doughnutChartType" height="20px" width="50px">
+        </canvas>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
