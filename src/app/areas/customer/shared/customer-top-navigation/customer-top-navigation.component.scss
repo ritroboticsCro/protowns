@@ -54,7 +54,7 @@
 //   }
 
 .example-spacer {
-  margin-left: 15%;
+ // margin-left: 15%;
   margin-right: 10%;
 }
 
@@ -76,4 +76,14 @@ mat-card {
 
 .mat-sidenav-content {
   background-color: #edeef0;
+}
+
+.navbutton{
+  color: #4a84e8;
+  height: 65px;
+  width: 30%
+}
+
+.nav_row{
+  height: 80px !important;
 }
