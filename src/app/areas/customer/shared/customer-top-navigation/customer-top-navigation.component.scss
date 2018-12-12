@@ -53,10 +53,10 @@
 //     padding: 0 54px;
 //   }
 
-.example-spacer {
+//.example-spacer {
  // margin-left: 15%;
-  margin-right: 10%;
-}
+//  margin-right: 10%;
+//}
 
 .space {
   flex: 1 1 auto;
@@ -81,9 +81,12 @@ mat-card {
 .navbutton{
   color: #4a84e8;
   height: 65px;
-  width: 30%
+  width: 150px;
+  display: flex;
+  text-align: center;
 }
 
+
 .nav_row{
-  height: 80px !important;
+  display: flex;
 }
