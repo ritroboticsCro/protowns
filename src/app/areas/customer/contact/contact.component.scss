@@ -1,0 +1,157 @@
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pagetitle {
+    color: #343a40;
+    padding-left: 10px;
+    border-left: 4px solid #4662d4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: .5px;
+}
+
+.contact-wrapper {
+    display: flex;
+    // padding-left: 25px;
+}
+
+//left side of the page
+.contact-left {
+    display: block;
+    width: 240px;
+}
+
+.contact-new {
+    display: flex;
+    background-color: #1b84e7;
+    color: #fff;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nav {
+    border: 1px solid #bfc4c9;
+    display: flex;
+}
+
+.nav-link {
+    height: 45px;
+    color: #7d8193;
+    padding: 0 20px;
+}
+
+// .nav-link:active{
+//     background-color: red;
+// }
+
+.button-lable-left {
+    float: left;
+}
+
+.button-lable-right {
+    float: right;
+}
+
+.section-label {
+    color:#6c757d;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 0.5rem;
+}
+
+//right side of the page
+.contact-right {
+    display: block;
+    flex: 1;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.load {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-top: 20px;
+    border-color: #bfc4c9;
+    color: #869ba1;
+    display: block;
+    width: 92%;
+    background-color: #f8f9fa;
+    padding: 0.594rem 0.75rem;
+    line-height: 1.5;
+}
+
+//card information
+.contact-card {
+    max-width: 33.33333%;
+    padding: 25px;
+    margin-bottom: 15px;
+    width: 25%;
+  }
+
+.header {
+    text-align: center;
+    display: block;
+}
+
+.mat-card-avatar {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 2px solid #1b84e7;
+}
+  
+.card-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    vertical-align: middle;
+  }
+
+.card-name {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-social {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.material-icons {
+    color: #1b84e7;
+}
+
+.contact-item {
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #dee2e6;
+    font-size: 13px;
+    color: #7d8193;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.additional {
+    margin-top: 25px;
+}

@@ -20,7 +20,7 @@ const SHARED_COMPONENTS = [
     RouterModule,
     FlexLayoutModule,
     FormsModule,
-    ChartsModule 
+    ChartsModule
   ],
   exports: [
     CommonModule,

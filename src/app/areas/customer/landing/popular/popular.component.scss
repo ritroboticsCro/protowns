@@ -1,0 +1,97 @@
+.wrapper {
+    display: flex;
+    margin: 0px;
+  
+    .overview-left {
+      padding-top: 70px;
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+  
+  .wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .row1 {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  
+  .row2 {
+    margin-top: 20px;
+    margin-right: 40px
+  }
+  
+  .row {
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+  }
+  
+  #title {
+    font-family: Roboto, Medium;
+    size: 55px;
+  }
+  
+  .overall-card {
+      min-width: 430px;
+      min-height: 200px;
+  }
+  
+  .mattitle {
+      font-size: 18px;
+  }
+
+  .matsub {
+    margin-top: 10px;
+}
+  
+  .icons {
+      margin: 20px;
+      margin-top: 30px;
+  }
+  
+  #cal {
+      font-size: 12.5px;
+  }
+  
+  .button {
+      background-color: rgb(114, 114, 114);
+      color: white;
+  }
+
+  .vl {
+    border-left: 1px solid rgb(181, 189, 181);
+    height: 50px;
+    margin: 20px;
+  }
+
+  .row2right {
+    margin-bottom: -22px;
+  }
+  
+  .row2 {
+    margin-top: 20px;
+  }
+
+  .mat-card-title:not(:first-child) {
+    margin-top: 2px;
+  }
+  
+  #by {
+      color: rgb(0, 157, 255);
+      
+  }
+
+  #sales {
+      font-size: 40px;
+  }
+
+  #earnings {
+      font-size: 40px;
+  }

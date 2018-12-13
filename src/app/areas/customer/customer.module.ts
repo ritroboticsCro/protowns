@@ -7,13 +7,17 @@ import { CustomerTopNavigationComponent } from './shared/customer-top-navigation
 import { SharedModule } from '../shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { OverallReportComponent } from './landing/overall-report/overall-report.component';
+import { PopularComponent } from './landing/popular/popular.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     LandingComponent,
     CustomerTopNavigationComponent,
     LayoutComponent,
-    OverallReportComponent
+    OverallReportComponent,
+    PopularComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

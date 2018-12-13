@@ -23,7 +23,9 @@ import {
     MatAutocompleteModule,
     MatGridListModule,
     MatStepperModule,
-    MatMenuModule
+    MatMenuModule,
+    MatAccordion,
+    MatExpansionModule
   } from '@angular/material';
 
   import { NgModule } from '@angular/core';
@@ -52,7 +54,8 @@ const materialModules = [
   MatAutocompleteModule,
   MatGridListModule,
   MatStepperModule,
-  MatMenuModule
+  MatMenuModule,
+  MatExpansionModule
 ];
 
 @NgModule({

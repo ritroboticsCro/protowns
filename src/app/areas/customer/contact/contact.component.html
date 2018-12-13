@@ -1,0 +1,229 @@
+<div class="container">
+  <!-- contact-header -->
+  <div class="contact-header">
+    <h6 class="pagetitle">Contact</h6>
+  </div>
+  <!-- contact-wrapper -->
+  <div class="contact-wrapper">
+    <!-- contact-left -->
+    <div class="contact-left">
+      <button mat-stroked-button class="contact-new" (click)="onClick()">Add New</button>
+      <mat-button-toggle-group vertical class="nav" value="all">
+        <mat-button-toggle class="nav-link" value="all">
+          <span class="button-lable-left">All Contacts</span>
+          <span class="button-lable-right">120</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="wal-mart">
+          <span class="button-lable-left">Wal-mart</span>
+          <span class="button-lable-right">16</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="apple">
+          <span class="button-lable-left">Apple</span>
+          <span class="button-lable-right">68</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="bestbuy">
+          <span class="button-lable-left">Best Buy</span>
+          <span class="button-lable-right">38</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="favorites">
+          <span class="button-lable-left">Favorites</span>
+          <span class="button-lable-right">9</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <label class="section-label">Location</label>
+      <mat-button-toggle-group vertical class="nav">
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Washington D.C.</span>
+          <span class="button-lable-right">10</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Los Angeles</span>
+          <span class="button-lable-right">16</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">New York</span>
+          <span class="button-lable-right">15</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Las Vegas</span>
+          <span class="button-lable-right">5</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Sacramento</span>
+          <span class="button-lable-right">4</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <label class="section-label">Job position</label>
+      <mat-button-toggle-group vertical class="nav">
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">CTO</span>
+          <span class="button-lable-right">4</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Network Engineer</span>
+          <span class="button-lable-right">6</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">Sales Representative</span>
+          <span class="button-lable-right">5</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">CFO</span>
+          <span class="button-lable-right">4</span>
+        </mat-button-toggle>
+        <mat-button-toggle class="nav-link" value="">
+          <span class="button-lable-left">CEO</span>
+          <span class="button-lable-right">4</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+    <!-- contact-right -->
+    <div class="contact-right">
+      <!-- row -->
+      <div class="row" fxLayoutGap="15px">
+         <!-- card -->
+        <mat-card class="contact-card">
+          <mat-card-header class="header">
+            <div mat-card-avatar class="card-image"></div>
+            <mat-card-title class="card-name">Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <p class="contact-social">
+              <i class="material-icons">person</i>
+              <i class="material-icons">whatshot</i>
+              <i class="material-icons">public</i>
+            </p>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="contact-item">
+              <span class="button-lable-left">Phone:</span>
+              <span class="button-lable-right">012 3456 789</span>
+            </p>
+            <p class="contact-item">
+              <span class="button-lable-left">Email:</span>
+              <span class="button-lable-right">person1@domain.com</span>
+            </p>
+            <p class="contact-item">
+              <span class="button-lable-left">URL:</span>
+              <span class="button-lable-right">http://thmpxls.me</span>
+            </p>
+          </mat-card-content>
+          <mat-accordion >
+            <mat-expansion-panel class="additional">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Additional Information
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-card>
+        <mat-card class="contact-card">
+            <mat-card-header class="header">
+              <div mat-card-avatar class="card-image"></div>
+              <mat-card-title class="card-name">Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <p class="contact-social">
+                <i class="material-icons">person</i>
+                <i class="material-icons">whatshot</i>
+                <i class="material-icons">public</i>
+              </p>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="contact-item">
+                <span class="button-lable-left">Phone:</span>
+                <span class="button-lable-right">012 3456 789</span>
+              </p>
+              <p class="contact-item">
+                <span class="button-lable-left">Email:</span>
+                <span class="button-lable-right">person1@domain.com</span>
+              </p>
+              <p class="contact-item">
+                <span class="button-lable-left">URL:</span>
+                <span class="button-lable-right">http://thmpxls.me</span>
+              </p>
+            </mat-card-content>
+            <mat-accordion>
+              <mat-expansion-panel class="additional">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Additional Information
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </mat-card>
+          <mat-card class="contact-card">
+              <mat-card-header class="header">
+                <div mat-card-avatar class="card-image"></div>
+                <mat-card-title class="card-name">Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                <p class="contact-social">
+                  <i class="material-icons">person</i>
+                  <i class="material-icons">whatshot</i>
+                  <i class="material-icons">public</i>
+                </p>
+              </mat-card-header>
+              <mat-card-content>
+                <p class="contact-item">
+                  <span class="button-lable-left">Phone:</span>
+                  <span class="button-lable-right">012 3456 789</span>
+                </p>
+                <p class="contact-item">
+                  <span class="button-lable-left">Email:</span>
+                  <span class="button-lable-right">person1@domain.com</span>
+                </p>
+                <p class="contact-item">
+                  <span class="button-lable-left">URL:</span>
+                  <span class="button-lable-right">http://thmpxls.me</span>
+                </p>
+              </mat-card-content>
+              <mat-accordion>
+                <mat-expansion-panel class="additional">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Additional Information
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-card>
+            <mat-card class="contact-card">
+                <mat-card-header class="header">
+                  <div mat-card-avatar class="card-image"></div>
+                  <mat-card-title class="card-name">Shiba Inu</mat-card-title>
+                  <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                  <p class="contact-social">
+                    <i class="material-icons">person</i>
+                    <i class="material-icons">whatshot</i>
+                    <i class="material-icons">public</i>
+                  </p>
+                </mat-card-header>
+                <mat-card-content>
+                  <p class="contact-item">
+                    <span class="button-lable-left">Phone:</span>
+                    <span class="button-lable-right">012 3456 789</span>
+                  </p>
+                  <p class="contact-item">
+                    <span class="button-lable-left">Email:</span>
+                    <span class="button-lable-right">person1@domain.com</span>
+                  </p>
+                  <p class="contact-item">
+                    <span class="button-lable-left">URL:</span>
+                    <span class="button-lable-right">http://thmpxls.me</span>
+                  </p>
+                </mat-card-content>
+                <mat-accordion>
+                  <mat-expansion-panel class="additional">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Additional Information
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                  </mat-expansion-panel>
+                </mat-accordion>
+              </mat-card>        
+      </div>
+      <button mat-stroked-button class="load">Load more contacts</button>
+    </div>
+  </div>
+</div>

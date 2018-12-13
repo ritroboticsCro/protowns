@@ -115,12 +115,12 @@
     <mat-card-content>
       <div class="row" fxLayoutGap="10px">
         <h1 id="revenue">$328.000</h1>
-        <h1 style="color: green;">27.33% <i id="arrow" class="material-icons">
+        <h1 style="color: rgb(5, 191, 5); font-weight: 600">27.33% <i id="arrow" class="material-icons">
             arrow_upward
           </i></h1>
       </div>
       <div fxLayoutAlign="center center">
-        <canvas baseChart [data]="doughnutChartData" [chartType]="doughnutChartType" height="20px" width="50px">
+        <canvas baseChart [data]="doughnutChartData" [chartType]="doughnutChartType" [labels]="doughnutChartLabel" height="20px" width="50px">
         </canvas>
       </div>
     </mat-card-content>
