@@ -9,6 +9,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { OverallReportComponent } from './landing/overall-report/overall-report.component';
 import { PopularComponent } from './landing/popular/popular.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReportsComponent } from './reports/reports.component';
+import { InfoDialogComponent } from './contact/info-dialog/info-dialog.component';
+import { MaterialElevationDirective } from './contact/material-elevation.directive';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,18 @@ import { ContactComponent } from './contact/contact.component';
     LayoutComponent,
     OverallReportComponent,
     PopularComponent,
-    ContactComponent
+    ContactComponent,
+    ReportsComponent,
+    InfoDialogComponent,
+    MaterialElevationDirective
   ],
   imports: [
     CommonModule,
     CustomerRoutingModule,
     SharedModule
-  ]
+  ],
+  entryComponents: [
+    InfoDialogComponent
+]
 })
 export class CustomerModule { }

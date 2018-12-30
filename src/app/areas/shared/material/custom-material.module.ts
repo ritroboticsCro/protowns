@@ -24,11 +24,11 @@ import {
     MatGridListModule,
     MatStepperModule,
     MatMenuModule,
-    MatAccordion,
     MatExpansionModule
   } from '@angular/material';
 
   import { NgModule } from '@angular/core';
+import { InfoDialogComponent } from '../../customer/contact/info-dialog/info-dialog.component';
 
 const materialModules = [
   MatButtonModule,

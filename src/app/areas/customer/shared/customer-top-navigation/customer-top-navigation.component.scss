@@ -1,3 +1,9 @@
+.top {
+  height: 75px;
+  align-items: center;
+  padding: 0;
+}
+
 .container {
   height: 100vh;
 }
@@ -47,6 +53,8 @@
 
 .example-card {
   background-color: rgba(0, 0, 0, 0);
+  margin-right: 40px;
+  padding-right: 10px;
 }
 
 //   .example-icon {
@@ -67,11 +75,12 @@ mat-card {
 
 }
 #nav-title{
-  margin-left: 33px;
+  margin-left: 40px;
   font-family: Roboto, Medium;
   font-size: 30px;
   font-weight: bold;
   color: #4a84e8;
+  padding-left: 10px;
 }
 
 .mat-sidenav-content {
@@ -90,3 +99,18 @@ mat-card {
 .nav_row{
   display: flex;
 }
+
+#searcho {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+#search {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  margin-top: 5px;
+}
+

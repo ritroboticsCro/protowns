@@ -1,4 +1,4 @@
-<mat-toolbar color="background">
+<mat-toolbar class="top" color="background">
   <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
     <mat-icon>menu</mat-icon>
   </button>
@@ -8,8 +8,8 @@
       (focus)="onFocussing(input.value)" />
   </mat-form-field>
   <span class="mat-search_icons" [class.mat-search_icons--active]="searchVisible">
-    <mat-icon class="mat-search_icon-close" (click)="close()" matRipple>close</mat-icon>
-    <mat-icon class="mat-search_icon-search" (click)="open()" matRipple>search</mat-icon>
+    <mat-icon id="search" class="mat-search_icon-close" (click)="close()" matRipple>close</mat-icon>
+    <mat-icon id="searcho" class="mat-search_icon-search" (click)="open()" matRipple>search</mat-icon>
   </span>
   <span class="space"></span>
   <mat-card class="example-card">
