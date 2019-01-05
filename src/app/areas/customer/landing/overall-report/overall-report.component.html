@@ -11,13 +11,19 @@
   </div>
   <div class="row2" fxLayoutAlign="end center">
     <div class="example-button-row" fxLayoutGap="20px">
-      <button mat-raised-button class="button">Activity Logs</button>
-      <button mat-raised-button class="button">Edit Settings</button>
+      <button mat-raised-button class="button">
+        <mat-icon>access_time</mat-icon>
+        Activity Logs
+      </button>
+      <button mat-raised-button class="button">
+        <mat-icon>settings</mat-icon>
+        Edit Settings
+      </button>
     </div>
   </div>
 </div>
 
-<div class="row" fxLayoutGap="44.5px">
+<div class="row" fxLayoutGap="40px">
   <mat-card class="overall-card" fxFlex="20">
     <mat-card-title fxLayoutAlign="center center" class="mattitle">9678</mat-card-title>
     <mat-card-subtitle fxLayoutAlign="center start">
@@ -120,7 +126,8 @@
           </i></h1>
       </div>
       <div fxLayoutAlign="center center">
-        <canvas baseChart [data]="doughnutChartData" [chartType]="doughnutChartType" [labels]="doughnutChartLabel" height="20px" width="50px">
+        <canvas baseChart [data]="doughnutChartData" [chartType]="doughnutChartType" [labels]="doughnutChartLabel"
+          height="20px" width="50px">
         </canvas>
       </div>
     </mat-card-content>

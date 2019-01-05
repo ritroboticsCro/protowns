@@ -12,44 +12,59 @@
     <mat-icon id="searcho" class="mat-search_icon-search" (click)="open()" matRipple>search</mat-icon>
   </span>
   <span class="space"></span>
-  <mat-card class="example-card">
-    <div mat-card-avatar class="example-header-image"></div>
-  </mat-card>
+  <div class="header-right">
+    <mat-icon id="notify">notifications</mat-icon>
+    <!-- <img src="" alt=""> -->
+    <mat-card class="example-card">
+      <div mat-card-avatar class="example-header-image"></div>
+    </mat-card>
+    <div class="drop-menu">
+      <button mat-button [matMenuTriggerFor]="menu" id="user">Lee
+        <i class="material-icons">
+          keyboard_arrow_down
+        </i>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
+  </div>
 </mat-toolbar>
 
 <mat-divider></mat-divider>
 
-<mat-toolbar>
-  <mat-toolbar-row class="example-spacer">
-   
-    <div fxShow="true" fxHide.lt-md="true" fxLayoutAlign="center center" >
+<mat-toolbar class="nav-bar">
+  <mat-toolbar-row>
+    <div class="container" fxShow="true" fxHide.lt-md="true" fxLayoutAlign="center center">
       <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      <button mat-stroked-button href="#" mat-button>
-        <mat-icon>notifications</mat-icon>
-        Notifications
+      <button class="nav-button" mat-stroked-button [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/" mat-button>
+        <mat-icon>dashboard</mat-icon>
+        dashboard
       </button>
-      <button mat-stroked-button href="#" mat-button>
-        <mat-icon>message</mat-icon>
-        Messages
+      <button class="nav-button" mat-stroked-button [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"
+        routerLink="/contact" mat-button>
+        <mat-icon>person</mat-icon>
+        contact
       </button>
-      <button mat-stroked-button href="#" mat-button>
-        <mat-icon>account_box</mat-icon>
-        My Account
-      </button>
-      <button mat-stroked-button href="#" mat-button>
-        <mat-icon>assessment</mat-icon>
+      <button class="nav-button" mat-stroked-button href="#" mat-button>
+        <mat-icon>reports</mat-icon>
         Reports
       </button>
-      <button mat-stroked-button href="#" mat-button>
+      <button class="nav-button" mat-stroked-button href="#" mat-button>
+        <mat-icon>explore</mat-icon>
+        Campaign
+      </button>
+      <button class="nav-button" mat-stroked-button href="#" mat-button>
         <mat-icon>settings</mat-icon>
         Settings
       </button>
-      <button mat-stroked-button href="#" mat-button>
-        <mat-icon>more</mat-icon>
-        Pages
-      </button>
     </div>
-</mat-toolbar-row>
+  </mat-toolbar-row>
 </mat-toolbar>
 <mat-divider></mat-divider>
 
