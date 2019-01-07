@@ -46,6 +46,7 @@
         </div>
       </div>
     </mat-tab>
+
     <mat-tab label="EMPLOYEE">
       <mat-form-field>
         <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
@@ -86,19 +87,22 @@
         <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
       </div>
     </mat-tab>
+ <!-- Task Tab -->
     <mat-tab label="TASK">
-      Content 3
+      <app-task></app-task>
     </mat-tab>
+
     <mat-tab label="CALENDAR">
-      Content 3
+      <app-calendar></app-calendar>
     </mat-tab>
   </mat-tab-group>
 
   <mat-divider></mat-divider>
 
-  <app-overall-report></app-overall-report>
-
+  <app-interaction></app-interaction>
+  
   <mat-divider></mat-divider>
 
-  <app-popular></app-popular>
+  <app-overall-report></app-overall-report>
+  
 </div>

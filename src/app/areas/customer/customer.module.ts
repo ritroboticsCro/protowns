@@ -7,11 +7,13 @@ import { CustomerTopNavigationComponent } from './shared/customer-top-navigation
 import { SharedModule } from '../shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { OverallReportComponent } from './landing/overall-report/overall-report.component';
-import { PopularComponent } from './landing/popular/popular.component';
+import { InteractionComponent } from './landing/interaction/interaction.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReportsComponent } from './reports/reports.component';
 import { InfoDialogComponent } from './contact/info-dialog/info-dialog.component';
 import { MaterialElevationDirective } from './contact/material-elevation.directive';
+import { TaskComponent } from './landing/task/task.component';
+import { CalendarComponent } from './landing/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { MaterialElevationDirective } from './contact/material-elevation.directi
     CustomerTopNavigationComponent,
     LayoutComponent,
     OverallReportComponent,
-    PopularComponent,
+    InteractionComponent,
     ContactComponent,
     ReportsComponent,
     InfoDialogComponent,
-    MaterialElevationDirective
+    MaterialElevationDirective,
+    TaskComponent,
+    CalendarComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <div class="row1">
+    <mat-card-title id="title">Meaningful Interactions
+      <mat-card-subtitle id="subtitle">
+        <br><i id="time" class="material-icons">
+            access_time
+        </i>
+        Updated 4 minutes ago
+      </mat-card-subtitle>
+    </mat-card-title>
+  </div>
+  <div class="row2" fxLayoutAlign="end center">
+    <div class="example-button-row" fxLayoutGap="20px">
+      <button mat-raised-button class="button">View All MI</button>
+      <button mat-raised-button class="button">View All Rounds</button>
+    </div>
+  </div>
+</div>
+
+<div class="row" fxLayoutGap="20px">
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-content class="content">
+      <div class="chart" fxLayoutAlign="start center">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [legend]="barChartLegend" [chartType]="barChartType"
+          [colors]="barChartColors" [options]="barChartOptions">
+        </canvas>
+      </div>
+    </mat-card-content>
+    <mat-card-subtitle fxLayoutAlign="start center" class="mattitle">MI's Booked Today</mat-card-subtitle>
+  </mat-card>
+
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-content class="content1">
+      <div class="chart" fxLayoutAlign="start center">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [legend]="barChartLegend" [chartType]="barChartType"
+          [colors]="barChartColors" [options]="barChartOptions">
+        </canvas>
+      </div>
+    </mat-card-content>
+    <mat-card-subtitle fxLayoutAlign="start center" class="mattitle">MI's Executed Today</mat-card-subtitle>
+  </mat-card>
+
+  <mat-card class="overall-card" fxFlex="20">
+    <mat-card-content class="content2">
+      <div class="chart" fxLayoutAlign="start center">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [legend]="barChartLegend" [chartType]="barChartType"
+          [colors]="barChartColors" [options]="barChartOptions">
+        </canvas>
+      </div>
+    </mat-card-content>
+    <mat-card-subtitle fxLayoutAlign="start center" class="mattitle">Rounds Completed Today</mat-card-subtitle>
+  </mat-card>
+
+</div>

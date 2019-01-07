@@ -32,7 +32,7 @@
     margin-left: 50px;
     margin-bottom: 40px;
   }
-  
+
   #title {
     font-family: Roboto, Medium;
     size: 55px;
@@ -45,19 +45,16 @@
   
   .mattitle {
       font-size: 18px;
+      margin-top: 20px;
   }
-
-  .matsub {
-    margin-top: 10px;
-}
-  
+ 
   .icons {
       margin: 20px;
       margin-top: 30px;
   }
   
-  #cal {
-      font-size: 12.5px;
+  #time {
+      font-size: 13px;
   }
   
   .button {
@@ -65,33 +62,30 @@
       color: white;
   }
 
-  .vl {
-    border-left: 1px solid rgb(181, 189, 181);
-    height: 50px;
-    margin: 20px;
-  }
-
-  .row2right {
-    margin-bottom: -22px;
-  }
-  
-  .row2 {
-    margin-top: 20px;
-  }
-
   .mat-card-title:not(:first-child) {
     margin-top: 2px;
   }
-  
-  #by {
-      color: rgb(0, 157, 255);
-      
+
+  .content {
+    background-color:#F3990F;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(240, 175, 36, 0.4);
   }
 
-  #sales {
-      font-size: 40px;
+  .content1 {
+    background-color:#B9292B;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(240, 56, 36, 0.4);
   }
 
-  #earnings {
-      font-size: 40px;
+  .content2 {
+    background-color:#006CDE;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(36, 145, 240, 0.4);
   }

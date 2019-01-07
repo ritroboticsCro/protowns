@@ -36,8 +36,8 @@ export class LandingComponent implements OnInit {
   public barChartLegend = true;
 
   public barChartData = [
-    {data: [65, 59, 30, 61, 56, 55, 40, 28, 48, 40, 19, 76], label: 'Series A'},
-    // {data: [28, 48, 40, 19, 86, 27, 90, 65, 59, 80, 81, 56], label: 'Series B'}
+    {data: [65, 59, 30, 61, 56, 55, 40, 28, 48, 40, 19, 76], label: 'Rounds Completed'},
+    {data: [28, 48, 40, 19, 86, 27, 90, 65, 59, 80, 81, 56], label: 'MIs Completed'}
   ];
 
   displayedColumns: string[] = ['id', 'name', 'progress', 'color'];
